@@ -1,9 +1,12 @@
 {
+  "homepage": "https://truth7eeker.github.io/tic-tac-toe",
   "name": "tic-tac-toe",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "webpack serve --open",
     "build": "webpack --config webpack.config.js --mode development"
   },
@@ -28,6 +31,7 @@
     "babel-loader": "^8.2.5",
     "css-loader": "^6.7.1",
     "file-loader": "^6.2.0",
+    "gh-pages": "^4.0.0",
     "html-webpack-plugin": "^5.5.0",
     "react-refresh": "^0.14.0",
     "sass": "^1.54.6",
