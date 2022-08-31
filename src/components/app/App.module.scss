@@ -6,6 +6,7 @@
     box-sizing: border-box;
 }
 
+
 .wrapper {
     background: #86a6ff;
     min-height: 100vh;
@@ -14,11 +15,11 @@
     align-items: center;
     flex-direction: column;
     gap: 4em;
+    
 }
 
 .results {
     display: flex;
-    justify-content: space-between;
     gap: 4em;
     font-family: 'Montserrat', sans-serif;
     color: #fff;
@@ -46,5 +47,11 @@
         &:active {
             transform: scale(1.1);
         }
+    }
+
+    @media screen and (max-width:600px) {
+        flex-direction: column;
+        gap: 2em;
+        height: auto;
     }
 }

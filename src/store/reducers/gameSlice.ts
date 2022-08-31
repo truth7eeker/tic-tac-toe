@@ -26,7 +26,6 @@ const gameSlice = createSlice({
            state.squares[payload] = state.isX ? 'X' : 'O'
            state.isX = !state.isX
            calculateWinner(state)
-           console.log(state.squares)
         },
         restart(state) {
             state.squares = Array(9).fill('')
