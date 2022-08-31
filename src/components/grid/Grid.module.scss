@@ -1,0 +1,9 @@
+.grid {
+    display: grid;
+    align-items: center;
+    justify-content: start;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+   
+}
+

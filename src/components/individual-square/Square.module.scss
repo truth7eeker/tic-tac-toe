@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Tillana:wght@400;500;600&display=swap');
+
+
+.square {
+    padding: 1em;
+    font-family: 'Tillana', cursive;
+    font-size: 2rem;
+    width: 130px;
+    height: 130px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-weight: 500;
+    line-height: 1.1rem;
+    
+    &:not(:nth-child(7)):not(:nth-child(8)):not(:last-child) {
+        border-bottom: 1.5px solid #fff;
+    }
+    &:not(:nth-child(3n)) {
+        border-right: 1.5px solid #fff;
+    }
+}
